@@ -2,7 +2,7 @@ name: WeChat Bot Daily Push
 
 on:
   schedule:
-    - cron: '0 9 * * 1,3,5'   # 每天 9:00 UTC，相当于中国时间 17:00（夏令时）或 17:00（冬令时）
+    - cron: '40 2 * * 1,3,5'   # 每天 9:00 UTC，相当于中国时间 17:00（夏令时）或 17:00（冬令时）
   workflow_dispatch:       # 手动触发也支持
 
 jobs:
