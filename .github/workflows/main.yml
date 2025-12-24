@@ -11,6 +11,6 @@ jobs:
     steps:
       - name: Send message via WeCom Bot
         run: |
-          curl -X POST "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=48e1f102-35fe-4701-8ac1-c32adaaba983" \
+          curl -X POST "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=c2930e44-ec06-409b-bab4-613ecb092a6c" \
           -H 'Content-Type: application/json' \
           -d '{"msgtype": "markdown", "markdown": {"content": "📢 **定时提醒**\n现在是北京时间 15:00，请检查trx余额，如余额不足请充值 ✅"}}'
