@@ -2,7 +2,7 @@ name: WeChat Bot Daily Push
 
 on:
   schedule:
-    - cron: '0 3 * * 3'   # 每天 9:00 UTC，相当于中国时间 17:00（夏令时）或 17:00（冬令时）
+    - cron: '0 8 * * 3'   # 每周三 8:00 UTC，相当于中国时间 16:00（夏令时）或 16:00（冬令时）
   workflow_dispatch:       # 手动触发也支持
 
 jobs:
@@ -13,4 +13,4 @@ jobs:
         run: |
           curl -X POST "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=c2930e44-ec06-409b-bab4-613ecb092a6c" \
           -H 'Content-Type: application/json' \
-          -d '{"msgtype": "markdown", "markdown": {"content": "📢 **定时提醒**\n现在是北京时间 15:00，请检查trx余额，如余额不足请充值 ✅"}}'
+          -d '{"msgtype": "markdown", "markdown": {"content": "📢 **定时提醒**\n现在是北京时间 16:00，请检查trx余额，如余额不足请充值 ✅"}}'
